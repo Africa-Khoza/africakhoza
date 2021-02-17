@@ -10,6 +10,7 @@
 	<title>Africa Khoza</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="icon" type="image/png" href="images/spotlight03.png">
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
@@ -17,6 +18,25 @@
 </head>
 
 <body class="is-preload">
+
+	<style>
+		#research {
+			background: linear-gradient(to bottom, #ab7aad 0%, #ffffff 100%);
+		}
+		
+		#about-me-backdrop{
+			background-color: #ab7aad;
+		}
+		
+		#about-me-content{
+			background-image: url("images/beautiful-tulip-flowers-corner-white-background.jpg");
+			background-size:cover;
+		}
+		
+		#contact {
+			background: linear-gradient(to bottom, #ffffff 0%, #ab7aad 100%);
+		}
+	</style>
 
 	<!-- Wrapper -->
 	<div id="wrapper" class="divided">
@@ -28,7 +48,7 @@
 				<h1>Africa Khoza</h1>
 				<p class="major">Do what you love.</p>
 				<ul class="actions stacked">
-					<li><a href="#first" class="button big wide smooth-scroll-middle">Check it out</a></li>
+					<li><a href="#about-me" class="button big wide smooth-scroll-middle">Check it out</a></li>
 				</ul>
 			</div>
 			<div class="image">
@@ -38,31 +58,27 @@
 
 		<!-- About Me -->
 		<section class="spotlight onscroll-image-fade-in style4 orient-center content-align-center image-position-center"
-			id="first">
-			<div class="content">
+			id="about-me">
+			<div class="content" id = "about-me-content">
 				<h2>About me</h2>
 				<p>University educated, liberal, tree-hugging hippie. </br> <h3>&#9996;&#127998; and &#128156;</h3> </p>
 				<ul class="actions stacked">
 					<li><a href="https://youtu.be/9b_SthKhqpM" class="button">Learn More</a></li>
 				</ul>
 			</div>
-			<div class="image">
-				<img src="images/pink-purple-flower.jpg" alt="" />
+			<div class="image" id = "about-me-backdrop">
 			</div>
 		</section>
 		
 		<!-- Research -->
-		<section class="spotlight onscroll-image-fade-in style1 orient-right content-align-left image-position-center"
-			id="first">
+		<section class="spotlight onscroll-image-fade-in style1 orient-right content-align-center image-position-center"
+			id="research">
 			<div class="content">
 				<h2>Research</h2>
 				<p>Improving education using artificial intelligence.</p>
 				<ul class="actions stacked">
 					<li><a href="research.html" class="button">Learn More</a></li>
 				</ul>
-			</div>
-			<div class="image">
-				<img src="images/spotlight01.jpeg" alt="" />
 			</div>
 		</section>
 
@@ -124,7 +140,7 @@
 		</section>
 
 		<!-- Footer -->
-		<footer class="wrapper style1 align-center ">
+		<footer class="wrapper style1 align-center color3">
 			<div class="inner">
 				<p>Copyright &copy; 2021 Africa Khoza - All Rights Reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.
 				</p>
