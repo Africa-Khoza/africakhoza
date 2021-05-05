@@ -12,6 +12,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="icon" type="image/png" href="images/spotlight03.png">
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
@@ -23,20 +24,20 @@
 		#research {
 			background: linear-gradient(to bottom, #ab7aad 0%, #6ba78c 100%);
 		}
-		
-		#about-me-backdrop{
+
+		#about-me-backdrop {
 			background-color: #ab7aad;
 		}
-		
-		#about-me-content{
+
+		#about-me-content {
 			background-image: url("images/beautiful-tulip-flowers-corner-white-background.jpg");
-			background-size:cover;
+			background-size: cover;
 		}
-		
-		#about-me{
+
+		#about-me {
 			color: green;
 		}
-		
+
 		#contact {
 			background: linear-gradient(to bottom, #6ba78c 0%, #ab7aad 100%);
 		}
@@ -53,7 +54,8 @@
 				<p class="major">Do what you love.</p>
 				<ul class="icons">
 					<!--<li><a href="https://github.com/OpSys" class="icon brands style2 fa-github"><span class="label">Github</span></a></li>-->
-					<li><a href="https://linkedin.com/in/africa-khoza23" class="icon brands style2 fa-linkedin-in"><span class="label disabled">LinkedIn</span></a></li>
+					<li><a href="https://linkedin.com/in/africa-khoza23" class="icon brands style2 fa-linkedin-in"><span
+								class="label disabled">LinkedIn</span></a></li>
 				</ul>
 			</div>
 			<div class="image">
@@ -64,19 +66,22 @@
 		<!-- About Me -->
 		<section class="spotlight onscroll-image-fade-in style4 orient-center content-align-center image-position-center"
 			id="about-me">
-			<div class="content" id = "about-me-content">
-				<h2 style = "color: #009900;">About</h2>
-				<p>I'm a university educated, liberal, tree-hugging hippie. </br> <h3 style = "color: #009900;">&#9996;&#127998; and &#128156;</h3> </p>
+			<div class="content" id="about-me-content">
+				<h2 style="color: #009900;">About</h2>
+				<p>I'm a university educated, liberal, tree-hugging hippie. </br>
+				<h3 style="color: #009900;">&#9996;&#127998; and &#128156;</h3>
+				</p>
 				<ul class="actions stacked">
-					<li><a href="https://youtu.be/9b_SthKhqpM" target = "_blank" class="button">Learn More</a></li>
+					<li><a href="https://youtu.be/9b_SthKhqpM" target="_blank" class="button">Learn More</a></li>
 				</ul>
 			</div>
-			<div class="image" id = "about-me-backdrop">
+			<div class="image" id="about-me-backdrop">
 			</div>
 		</section>
-		
+
 		<!-- Research -->
-		<section class="spotlight onscroll-image-fade-in style1 invert orient-right content-align-center image-position-center"
+		<section
+			class="spotlight onscroll-image-fade-in style1 invert orient-right content-align-center image-position-center"
 			id="research">
 			<div class="content">
 				<h2>What I do</h2>
@@ -105,13 +110,15 @@
 				<h2>Affiliations</h2>
 				<div class="items onscroll-fade-in style3 medium">
 					<section>
-						<a href="https://www.apodytes.com" target = "_blank"><img src="images/apodytes-logo2.png" alt="apodytes logo" /></a>
+						<a href="https://www.apodytes.com" target="_blank"><img src="images/apodytes-logo2.png"
+								alt="apodytes logo" /></a>
 					</section>
 					<section>
-						<a href="https://africateengeeks.co.za" target = "_blank"><img src="images/atg-logo2.png" alt="atg logo" /></a>
+						<a href="https://africateengeeks.co.za" target="_blank"><img src="images/atg-logo2.png"
+								alt="atg logo" /></a>
 					</section>
 					<section>
-						<a href="https://raillab.org" target = "_blank"><img src="images/RAILogo.png" alt="rail logo" /></a>
+						<a href="https://raillab.org" target="_blank"><img src="images/RAILogo.png" alt="rail logo" /></a>
 					</section>
 				</div>
 			</div>
@@ -136,6 +143,7 @@
 							<textarea name="message" id="message" rows="6"></textarea>
 						</div>
 					</div>
+					<div class="g-recaptcha" data-sitekey="6Lc1YscaAAAAAH_G63iDtld_Bk8NYdxIsZ7RmTrb"></div>
 					<ul class="actions special">
 						<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
 					</ul>
@@ -149,7 +157,8 @@
 			<div class="inner">
 				<ul class="icons">
 					<!--<li><a href="https://github.com/OpSys" class="icon brands style2 fa-github"><span class="label">Github</span></a></li>-->
-					<li><a href="https://linkedin.com/in/africa-khoza23" class="icon brands style2 fa-linkedin-in"><span class="label disabled">LinkedIn</span></a></li>
+					<li><a href="https://linkedin.com/in/africa-khoza23" class="icon brands style2 fa-linkedin-in"><span
+								class="label disabled">LinkedIn</span></a></li>
 				</ul>
 				<p>Copyright &copy; 2021 Africa Khoza - All Rights Reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.
 				</p>
@@ -159,6 +168,14 @@
 	</div>
 
 	<!-- Scripts -->
+	<script>
+		window.onload = function () {
+			var el = document.getElementById('g-recaptcha-response');
+			if (el) {
+				el.setAttribute('required', 'required');
+			}
+		}
+	</script>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.scrollex.min.js"></script>
 	<script src="assets/js/jquery.scrolly.min.js"></script>
