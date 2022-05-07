@@ -10,6 +10,7 @@
 	<title>Africa Khoza</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="icon" type="image/png" href="images/spotlight03.png">
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -21,12 +22,12 @@
 <body class="is-preload">
 
 	<style>
-		#research {
-			background: linear-gradient(to bottom, #ab7aad 0%, #6ba78c 100%);
+		#intro {
+			background: linear-gradient(to bottom, #ab7aad 0%, #122333 100%);
 		}
 
 		#about-me-backdrop {
-			background-color: #ab7aad;
+			background-color: #122333;
 		}
 
 		#about-me-content {
@@ -37,9 +38,17 @@
 		#about-me {
 			color: green;
 		}
+		
+		#what-we-do {
+			background-color: #122333;
+		}
 
 		#contact {
-			background: linear-gradient(to bottom, #6ba78c 0%, #ab7aad 100%);
+			background: linear-gradient(to bottom, #122333 60%, #ab7aad 100%);
+		}
+
+		#wrapper.divided > .invert {
+			box-shadow: none;
 		}
 	</style>
 
@@ -47,16 +56,15 @@
 	<div id="wrapper" class="divided">
 
 		<!-- Home Banner -->
-		<section
+		<section id="intro"
 			class="banner onload-image-fade-in onload-content-fade-right invert style3 color3 fullscreen image-position-center orient-right content-align-center">
 			<div class="content">
 				<h1>Africa Khoza</h1>
 				<p class="major">Do what you love.</p>
-				<ul class="icons">
-					<!--<li><a href="https://github.com/OpSys" class="icon brands style2 fa-github"><span class="label">Github</span></a></li>-->
-					<li><a href="https://linkedin.com/in/africa-khoza23" class="icon brands style2 fa-linkedin-in"><span
-								class="label disabled">LinkedIn</span></a></li>
+                                <ul class="actions stacked">
+					<li><a href="#about-me" class="button large wide smooth-scroll-middle">Check it out</a></li>
 				</ul>
+				
 			</div>
 			<div class="image">
 				<img src="images/banner1.jpg" alt="" />
@@ -68,7 +76,7 @@
 			id="about-me">
 			<div class="content" id="about-me-content">
 				<h2 style="color: #009900;">About</h2>
-				<p>I'm a university educated, liberal, tree-hugging hippie. </br>
+				<p>University educated, open-minded, tree-hugging hippie. </br>
 				<h3 style="color: #009900;">&#9996;&#127998; and &#128156;</h3>
 				</p>
 				<ul class="actions stacked">
@@ -79,16 +87,38 @@
 			</div>
 		</section>
 
-		<!-- Research -->
-		<section
-			class="spotlight onscroll-image-fade-in style1 invert orient-right content-align-center image-position-center"
-			id="research">
-			<div class="content">
-				<h2>What I do</h2>
-				<p>I try to improve education using artificial intelligence.</p>
-				<ul class="actions stacked">
-					<li><a href="work.html" class="button">Learn More</a></li>
-				</ul>
+		<!-- What we do -->
+		<section id="what-we-do" class="wrapper style1 align-center invert" style="background-color: #122333;">
+			<div class="inner">
+				<h2>What we do</h2>
+				<p>Just like a five year old, we're fascinated by a lot of things.</p>
+				<div class="items style1 medium onscroll-fade-in">
+					<section>
+						<span class="icon style2 major fa-gem"></span>
+						<a href="education.html"><h3>Education</h3></a>
+						<p>Fascinated by the art of learning and teaching.</p>
+					</section>
+					<section>
+						<span class="icon solid style2 major fa-save"></span>
+						<a href="biking/biking.html"><h3>Biking</h3></a>
+						<p>Dare to try something risky.</p>
+					</section>
+					<section>
+						<span class="icon solid style2 major  fa-leaf"></span>
+						<h3>BlackHippy</h3>
+						<p>Art is fun when you're high.</p>
+					</section>
+					<section>
+						<span class="icon solid style2 major fa-wifi"></span>
+						<h3>Coding</h3>
+						<p>Turning 0s and 1s into some dope ass shit.</p>
+					</section>
+					<section>
+						<span class="icon solid style2 major fa-chart-bar"></span>
+						<h3>Professional</h3>
+						<p>Currently working on Data Science and Data Engineering projects.</p>
+					</section>
+				</div>
 			</div>
 		</section>
 
@@ -103,20 +133,7 @@
 			</div>
 		</section> -->
 
-
-		<!-- Affiliations -->
-		<!-- <section class="wrapper style1 align-center invert color7">
-			<div class="inner">
-				<h2>Affiliations</h2>
-				<div class="items onscroll-fade-in style3 medium">
-					<section>
-						<a href="https://raillab.org" target="_blank"><img src="images/RAILogo.png" alt="rail logo" /></a>
-					</section>
-				</div>
-			</div>
-		</section> -->
-
-		<!-- Contact Me -->
+		<!-- Contact Us -->
 		<section class="wrapper style1 align-center invert" id="contact">
 			<div class="inner medium">
 				<h2>Get in touch</h2>
@@ -147,12 +164,7 @@
 		<!-- Footer -->
 		<footer class="wrapper style1 align-center invert color3">
 			<div class="inner">
-				<ul class="icons">
-					<!--<li><a href="https://github.com/OpSys" class="icon brands style2 fa-github"><span class="label">Github</span></a></li>-->
-					<li><a href="https://linkedin.com/in/africa-khoza23" class="icon brands style2 fa-linkedin-in"><span
-								class="label disabled">LinkedIn</span></a></li>
-				</ul>
-				<p>Copyright &copy; 2021 Africa Khoza - All Rights Reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.
+				<p>Copyright &copy; <span id="year"></span> Africa Khoza - All Rights Reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.
 				</p>
 			</div>
 		</footer>
@@ -175,7 +187,8 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-
+	<script src="biking/assets/js/custom.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>
