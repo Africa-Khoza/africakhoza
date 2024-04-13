@@ -1,3 +1,3 @@
 # africakhoza
 
-official africa khoza website for 2024. 
+official africa khoza website for 2024.
